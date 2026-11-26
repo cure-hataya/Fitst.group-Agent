@@ -1,0 +1,33 @@
+id,amount,merchant,category,occurred_at,note,source,status
+1,28.0,滴滴出行,交通,2026-11-15,加班打车回家,text,confirmed
+2,38.5,海底捞,餐饮,2026-11-14,朋友聚餐,text,confirmed
+3,156.0,西西弗书店,学习,2026-11-12,买《设计心理学》,text,confirmed
+4,64.0,奈雪的茶,餐饮,2026-11-13,下午茶,text,confirmed
+5,1999.0,京东,购物,2026-11-10,双十一买耳机,text,confirmed
+6,52.0,盒马鲜生,餐饮,2026-11-11,周末囤菜,text,confirmed
+7,128.0,星巴克,餐饮,2026-11-09,工作日咖啡,text,confirmed
+8,35.0,猫眼电影,娱乐,2026-11-08,看《封神》,text,confirmed
+9,680.0,燃气公司,居住,2026-11-05,11月燃气费,text,confirmed
+10,88.0,同仁堂,医疗,2026-11-04,调理中药,text,confirmed
+11,12.0,美团单车,交通,2026-11-12,通勤骑车,text,confirmed
+12,760.0,房东,居住,2026-11-01,11月房租,text,confirmed
+13,26.5,瑞幸咖啡,餐饮,2026-11-06,生椰拿铁,audio,confirmed
+14,45.0,711便利店,其他,2026-11-07,买电池和纸巾,image,confirmed
+15,215.0,优衣库,购物,2026-10-28,秋装补充,image,confirmed
+16,19.0,肯德基,餐饮,2026-10-30,早餐,text,confirmed
+17,320.0,万达影城,娱乐,2026-10-26,IMAX三部曲,text,confirmed
+18,56.0,和睦家,医疗,2026-10-22,体检复查,text,confirmed
+19,42.0,滴滴出行,交通,2026-10-18,机场往返,text,confirmed
+20,1280.0,房东,居住,2026-10-01,10月房租,text,confirmed
+21,88.0,全家便利店,其他,2026-09-25,零食饮料,text,confirmed
+22,176.0,大众点评,餐饮,2026-09-20,请客吃饭,text,confirmed
+23,599.0,苹果官网,购物,2026-09-18,买保护壳,text,confirmed
+24,65.0,猫眼电影,娱乐,2026-09-12,周末电影,text,confirmed
+25,24.0,地铁,交通,2026-09-15,充值,text,confirmed
+27,28.0,星巴克咖啡,餐饮,2026-11-16,拿铁(配 receipt_coffee.png),image,confirmed
+28,66.5,盒马鲜生,餐饮,2026-11-15,买菜(配 receipt_market.png),image,confirmed
+29,27.5,滴滴出行,交通,2026-11-14,快车(配 receipt_payment.png),image,confirmed
+30,32.5,滴滴出行,交通,2026-11-13,语音记账(配 voice_taxi.wav),audio,confirmed
+31,28.0,星巴克,餐饮,2026-11-16,语音记账(配 voice_coffee.wav),audio,confirmed
+32,199.0,优衣库,购物,2026-11-12,语音记账(配 voice_shop.wav),audio,confirmed
+26,0.0,,其他,2026-11-16,模型刚识别待确认草稿,text,pending
