@@ -1,0 +1,14 @@
+venv/
+.venv/
+*.db
+*.sqlite3
+finance.db
+build/
+*.pyd
+*.so
+*.obj
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
