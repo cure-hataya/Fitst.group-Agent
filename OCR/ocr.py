@@ -1,15 +1,4 @@
-﻿"""OCR 模块（单文件版）：图片 / 语音 → 结构化账目。
-用法：
-    from ocr import recognize, transcribe
 
-    result = recognize(image_bytes)
-    if result["ok"]:
-        print(result["amount"], result["category"])
-
-返回不抛异常：
-    {"ok": True,  "source": "image", "amount": 38.5, ...}
-    {"ok": False, "source": "image", "error": {"code": "NO_AMOUNT", "message": "..."}}
-"""
 from __future__ import annotations
 
 import base64
@@ -37,8 +26,7 @@ try:
 except Exception:
     pass
 
-#直接粘 Key
-# 优先级：LOCAL_API_KEY > 环境变量 > .env
+#粘贴 Key
 API_KEY = (LOCAL_API_KEY or os.getenv("DASHSCOPE_API_KEY", "")).strip()
 BASE_URL = os.getenv("DASHSCOPE_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1")
 VISION_MODEL = os.getenv("VISION_MODEL", "qwen3-vl-plus")
@@ -74,15 +62,14 @@ OCR_PROMPT = """你是小票识别模块。读出这张小票/支付截图里的
 TEXT_PROMPT = """把这句话转成记账 JSON，只输出 JSON：
 
 {"amount": 数字或 null, "category": "餐饮/交通/购物/居住/娱乐/医疗/教育/人情/其他",
- "date_text": "原样抄写时间词，如「昨天」「11月1号」，没说就填「今天」",
+ "date_text": "原样抄写时间，如「昨天」「11月1号」，无就填「今天」",
  "note": "原句"}
 
-不要自己换算日期。"""
+不要换算日期。"""
 
 
 # 工具
 def available() -> bool:
-    """有 Key 且看起来像真的（防止把占位文字当 Key）。"""
     return API_KEY.startswith("sk-") and len(API_KEY) > 12
 
 
